@@ -16,7 +16,9 @@
   --text:#15384a;
 }
 
-*{box-sizing:border-box;}
+*{
+  box-sizing:border-box;
+}
 
 body{
   margin:0;
@@ -24,7 +26,13 @@ body{
   color:var(--text);
   background:
     radial-gradient(circle at top right, var(--sun) 0 90px, transparent 92px),
-    linear-gradient(180deg,#bdefff 0%,#c7f3ff 30%,var(--sand) 30%,#fff3c8 100%);
+    linear-gradient(
+      180deg,
+      #bdefff 0%,
+      #c7f3ff 30%,
+      var(--sand) 30%,
+      #fff3c8 100%
+    );
   min-height:100vh;
 }
 
@@ -177,8 +185,13 @@ h1{
 }
 
 @media(max-width:700px){
-  .hero{padding:40px 20px;}
-  .section-title{font-size:1.6rem;}
+  .hero{
+    padding:40px 20px;
+  }
+
+  .section-title{
+    font-size:1.6rem;
+  }
 }
 </style>
 </head>
@@ -188,44 +201,69 @@ h1{
 <div class="container">
 
   <section class="hero">
-    <h1>ELI'S<br>HAPPY PLACE</h1>
+
+    <h1>
+      ELI'S<br>
+      HAPPY PLACE
+    </h1>
 
     <p class="subtitle">
       Everything in one place 🌴
     </p>
 
-  <div class="buttons hero-buttons">
-  <a class="btn open-btn"
-     href="https://docs.google.com/spreadsheets/d/13Dmit3Vh7x02dFvckYaUFSpj_KCnMEweN-pdFsizK3M/edit?gid=847821097#gid=847821097"
-     target="_blank">
-    RESERVAS 2026
-  </a>
+    <div class="buttons hero-buttons">
 
-  <a class="btn open-btn"
-     href="https://docs.google.com/spreadsheets/d/11NxpNySkCYtCgnNmLNLOXzgyixXJrJnl7abut36BO_Y/edit?usp=drive_link"
-     target="_blank">
-    RESERVAS 2025
-  </a>
+      <a
+        class="btn open-btn"
+        href="https://docs.google.com/spreadsheets/d/13Dmit3Vh7x02dFvckYaUFSpj_KCnMEweN-pdFsizK3M/edit?gid=847821097#gid=847821097"
+        target="_blank"
+      >
+        RESERVAS 2026
+      </a>
 
-<a class="btn open-btn"
-   href="https://script.google.com/macros/s/AKfycbwIN3k0rRUMskVqkFYa4wRzZQ_zB84zEPxEYwmN485dXkpdCZ5N4bzBpDgN3IvyvgnL9A/exec?app=control"
-   target="_blank">
-  RESERVAS FAST
-</a>
+      <a
+        class="btn open-btn"
+        href="https://docs.google.com/spreadsheets/d/11NxpNySkCYtCgnNmLNLOXzgyixXJrJnl7abut36BO_Y/edit?usp=drive_link"
+        target="_blank"
+      >
+        RESERVAS 2025
+      </a>
 
-  <a class="btn open-btn"
-     href="https://dashmaav.netlify.app/"
-     target="_blank">
-    MAAV KPIs
-  </a>
-</div>
+      <a
+        class="btn open-btn"
+        href="https://script.google.com/macros/s/AKfycbwIN3k0rRUMskVqkFYa4wRzZQ_zB84zEPxEYwmN485dXkpdCZ5N4bzBpDgN3IvyvgnL9A/exec?app=control"
+        target="_blank"
+      >
+        RESERVAS FAST
+      </a>
+
+      <a
+        class="btn open-btn"
+        href="https://dashmaav.netlify.app/"
+        target="_blank"
+      >
+        MAAV KPIs
+      </a>
+
+    </div>
+
+  </section>
+
 
   <section class="section">
-    <h2 class="section-title">🌴 Arrival Guides</h2>
+
+    <h2 class="section-title">
+      🌴 Arrival Guides
+    </h2>
 
     <div class="grid">
+
       <div class="card searchable">
-        <h3>Información viviendas</h3>
+
+        <h3>
+          Información viviendas
+        </h3>
+
         <p class="description">
           Guías de llegada, normas, recomendaciones y enlaces útiles para huéspedes.
         </p>
@@ -236,19 +274,95 @@ h1{
         </div>
 
         <div class="buttons">
-          <a class="btn open-btn" href="https://maavsl.github.io/WEB1/" target="_blank">OPEN</a>
-          <button class="btn copy-btn" onclick="copyURL('https://maavsl.github.io/WEB1/')">COPY URL</button>
+
+          <a
+            class="btn open-btn"
+            href="https://maavsl.github.io/WEB1/"
+            target="_blank"
+          >
+            OPEN
+          </a>
+
+          <button
+            class="btn copy-btn"
+            onclick="copyURL('https://maavsl.github.io/WEB1/')"
+          >
+            COPY URL
+          </button>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
 
+
   <section class="section">
-    <h2 class="section-title">✈️ Airport</h2>
+
+    <h2 class="section-title">
+      🏡 Fuerteventura Homes
+    </h2>
 
     <div class="grid">
+
       <div class="card searchable">
-        <h3>Fuerteventura Pickup</h3>
+
+        <h3>
+          MAAV Viviendas
+        </h3>
+
+        <p class="description">
+          Mapa de viviendas MAAV con ubicaciones, fotos, disponibilidad y enlaces de Airbnb.
+        </p>
+
+        <div class="tags">
+          <span class="tag">Viviendas</span>
+          <span class="tag">Mapa</span>
+          <span class="tag">Disponibilidad</span>
+        </div>
+
+        <div class="buttons">
+
+          <a
+            class="btn open-btn"
+            href="https://script.google.com/macros/s/AKfycbz87BG0ChDwfWz7S6KJXs1vAhH01VD05uIWT__buK1QTZoybHMqo5UVk7545cCavhl8Jw/exec"
+            target="_blank"
+          >
+            OPEN
+          </a>
+
+          <button
+            class="btn copy-btn"
+            onclick="copyURL('https://script.google.com/macros/s/AKfycbz87BG0ChDwfWz7S6KJXs1vAhH01VD05uIWT__buK1QTZoybHMqo5UVk7545cCavhl8Jw/exec')"
+          >
+            COPY URL
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="section">
+
+    <h2 class="section-title">
+      ✈️ Airport
+    </h2>
+
+    <div class="grid">
+
+      <div class="card searchable">
+
+        <h3>
+          Fuerteventura Pickup
+        </h3>
+
         <p class="description">
           Airport pickup booking website.
         </p>
@@ -259,19 +373,45 @@ h1{
         </div>
 
         <div class="buttons">
-          <a class="btn open-btn" href="https://maavsl.github.io/aeropuerto/" target="_blank">OPEN</a>
-          <button class="btn copy-btn" onclick="copyURL('https://maavsl.github.io/aeropuerto/')">COPY URL</button>
+
+          <a
+            class="btn open-btn"
+            href="https://maavsl.github.io/aeropuerto/"
+            target="_blank"
+          >
+            OPEN
+          </a>
+
+          <button
+            class="btn copy-btn"
+            onclick="copyURL('https://maavsl.github.io/aeropuerto/')"
+          >
+            COPY URL
+          </button>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
 
+
   <section class="section">
-    <h2 class="section-title">📊 Dashboards</h2>
+
+    <h2 class="section-title">
+      📊 Dashboards
+    </h2>
 
     <div class="grid">
+
       <div class="card searchable">
-        <h3>MAAV Dashboards</h3>
+
+        <h3>
+          MAAV Dashboards
+        </h3>
+
         <p class="description">
           Todos los dashboards de viviendas y analítica MAAV.
         </p>
@@ -282,19 +422,45 @@ h1{
         </div>
 
         <div class="buttons">
-          <a class="btn open-btn" href="https://maavsl.github.io/dashboards/" target="_blank">OPEN</a>
-          <button class="btn copy-btn" onclick="copyURL('https://maavsl.github.io/dashboards/')">COPY URL</button>
+
+          <a
+            class="btn open-btn"
+            href="https://maavsl.github.io/dashboards/"
+            target="_blank"
+          >
+            OPEN
+          </a>
+
+          <button
+            class="btn copy-btn"
+            onclick="copyURL('https://maavsl.github.io/dashboards/')"
+          >
+            COPY URL
+          </button>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
 
+
   <section class="section">
-    <h2 class="section-title">🏠 Viviendas</h2>
+
+    <h2 class="section-title">
+      🏠 Viviendas
+    </h2>
 
     <div class="grid">
+
       <div class="card searchable">
-        <h3>Viviendas</h3>
+
+        <h3>
+          Viviendas
+        </h3>
+
         <p class="description">
           Carpeta principal de viviendas, documentación y recursos operativos.
         </p>
@@ -305,13 +471,33 @@ h1{
         </div>
 
         <div class="buttons">
-          <a class="btn open-btn" href="https://drive.google.com/drive/folders/1-3rrUfvgjJO3_gzgpmzIKKaPX89XmyWd" target="_blank">OPEN</a>
-          <button class="btn copy-btn" onclick="copyURL('https://drive.google.com/drive/folders/1-3rrUfvgjJO3_gzgpmzIKKaPX89XmyWd')">COPY URL</button>
+
+          <a
+            class="btn open-btn"
+            href="https://drive.google.com/drive/folders/1-3rrUfvgjJO3_gzgpmzIKKaPX89XmyWd"
+            target="_blank"
+          >
+            OPEN
+          </a>
+
+          <button
+            class="btn copy-btn"
+            onclick="copyURL('https://drive.google.com/drive/folders/1-3rrUfvgjJO3_gzgpmzIKKaPX89XmyWd')"
+          >
+            COPY URL
+          </button>
+
         </div>
+
       </div>
 
+
       <div class="card searchable">
-        <h3>Limpiezas</h3>
+
+        <h3>
+          Limpiezas
+        </h3>
+
         <p class="description">
           Carpeta de limpiezas, organización y documentación del equipo.
         </p>
@@ -322,18 +508,37 @@ h1{
         </div>
 
         <div class="buttons">
-          <a class="btn open-btn" href="https://drive.google.com/drive/folders/1r2oGnnR5LqBzjKuFuCq-XutEhzBu-A2r" target="_blank">OPEN</a>
-          <button class="btn copy-btn" onclick="copyURL('https://drive.google.com/drive/folders/1r2oGnnR5LqBzjKuFuCq-XutEhzBu-A2r')">COPY URL</button>
+
+          <a
+            class="btn open-btn"
+            href="https://drive.google.com/drive/folders/1r2oGnnR5LqBzjKuFuCq-XutEhzBu-A2r"
+            target="_blank"
+          >
+            OPEN
+          </a>
+
+          <button
+            class="btn copy-btn"
+            onclick="copyURL('https://drive.google.com/drive/folders/1r2oGnnR5LqBzjKuFuCq-XutEhzBu-A2r')"
+          >
+            COPY URL
+          </button>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
+
 
   <div class="footer">
     ☀️ ELI'S HAPPY PLACE · MAAV ECOSYSTEM 🌊
   </div>
 
 </div>
+
 
 <script>
 function copyURL(url){
